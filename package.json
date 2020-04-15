@@ -1,7 +1,7 @@
 {
     "name": "Reference-App",
     "version": "0.1.0",
-    "private": false
+    "private": false,
     "homepage": "http://inder2108.github.io/Reference-App/",
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.27",
