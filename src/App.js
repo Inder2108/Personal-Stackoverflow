@@ -8,8 +8,8 @@ import './App.scss';
 const App = () => (
     <Router history={history}>
         <Switch>
-            <Route exact path="/" component={BlogsListContainer}></Route>
-            <Route path="/blog-detail/:url" component={BlogDetailContainer}></Route>
+            <Route exact path={process.env.PUBLIC_URL + "/"} component={BlogsListContainer}></Route>
+            <Route path={process.env.PUBLIC_URL + "/blog-detail/:url"} component={BlogDetailContainer}></Route>
             {/* <Route component={NotFoundPage} /> */}
         </Switch>
     </Router>
