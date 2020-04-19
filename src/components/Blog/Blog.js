@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Blog.scss";
 
 let blog = props => {
@@ -7,12 +8,11 @@ let blog = props => {
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
                 <strong class="d-inline-block mb-2 text-primary">{category} / {subCategory}</strong>
-                <h3 class="mb-0">
-                    <a class="text-dark" href="#" onClick={props.onShowDetailsClick}>{title}</a>
+                <h3 class="mb-0 btn btn-link" onClick={props.onShowDetailsClick}>
+                    <Link to={"/blog-detail/" + id}>{title}</Link>
                 </h3>
                 <div class="mb-1 text-muted">{date}</div>
                 <p class="card-text mb-auto">{preview}</p>
-                <a href="#">Continue reading</a>
             </div>
         </div>
     );

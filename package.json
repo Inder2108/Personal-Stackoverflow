@@ -1,8 +1,8 @@
 {
-    "name": "Reference-App",
+    "name": "React-Starter",
     "version": "0.1.0",
-    "private": false,
-    "homepage": "http://inder2108.github.io/Reference-App/",
+    "private": true,
+    "homepage": "http://inder2108.github.io/React-Starter/",
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.27",
         "@fortawesome/free-brands-svg-icons": "^5.12.1",
