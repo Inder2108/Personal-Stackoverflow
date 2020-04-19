@@ -9,7 +9,7 @@ let blog = props => {
             <div class="card-body d-flex flex-column align-items-start">
                 <strong class="d-inline-block mb-2 text-primary">{category} / {subCategory}</strong>
                 <h3 class="mb-0 btn btn-link" onClick={props.onShowDetailsClick}>
-                    <Link to={"/blog-detail/" + id}>{title}</Link>
+                    <Link to={process.env.PUBLIC_URL + "/blog-detail/" + id}>{title}</Link>
                 </h3>
                 <div class="mb-1 text-muted">{date}</div>
                 <p class="card-text mb-auto">{preview}</p>

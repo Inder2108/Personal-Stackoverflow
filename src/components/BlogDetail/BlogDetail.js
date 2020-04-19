@@ -25,7 +25,7 @@ let blogDetail = props => {
             <div class="card-header">
                 <span>{title}</span>
                 <span class="float-right">
-                    <Link to="/"><FontAwesomeIcon icon={faTimes} className="text-danger" /></Link>
+                    <Link to={process.env.PUBLIC_URL + "/"}><FontAwesomeIcon icon={faTimes} className="text-danger" /></Link>
                 </span>
             </div>
             <div class="card-body">{contentJsx}</div>
